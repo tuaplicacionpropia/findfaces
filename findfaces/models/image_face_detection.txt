@@ -1,0 +1,40 @@
+python face_detector_image.py --image test_image.jpg --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel
+
+
+
+python detect_faces_video.py --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel
+
+
+
+
+python face_detector_image.py --image woman-1807533_1920.jpg --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel
+
+
+python face_detector_image.py --image woman-2003647_1920.jpg --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel
+
+python face_detector_image.py --image img1.jpg --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel
+
+python face_detector_image.py --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel --confidence 0.8 --image img1.jpg 
+
+
+
+
+python face_detector_image.py --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel --confidence 0.8 --image img1.jpg 
+
+
+
+
+python face_detector_image.py --prototxt deploy2.prototxt --model bvlc_googlenet.caffemodel --confidence 0.8 --image img1.jpg 
+
+
+
+python face_detector_image.py --prototxt bvlc_googlenet.prototxt --model bvlc_googlenet.caffemodel --confidence 0.8 --image img1.jpg 
+
+
+
+python face_detector_image.py --prototxt deploy_600.prototxt --model face_detectnet_600.caffemodel --confidence 0.8 --size 600 --image img1.jpg 
+python face_detector_image.py --prototxt deploy_1024.prototxt --model face_detectnet_1024.caffemodel --confidence 0.8 --size 1024 --image img1.jpg 
+
+
+python face_detector_image.py --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel --confidence 0.8 --size 300 --image img1.jpg 
+
