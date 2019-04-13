@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='findfaces',
-    version='0.0.01',
+    version='0.0.02',
     url='https://github.com/tuaplicacionpropia/findfaces',
     download_url='https://github.com/tuaplicacionpropia/findfaces/archive/master.zip',
     author=u'tuaplicacionpropia.com',
@@ -22,6 +22,7 @@ setup(
     ],
     scripts=[
       'bin/ff_detect.cmd', 'bin/ff_detect',
+      'bin/ff_cropAllFaces.cmd', 'bin/ff_cropAllFaces',
       'bin/ff_help.cmd', 'bin/ff_help'
     ],
     packages=find_packages(exclude=['tests']),

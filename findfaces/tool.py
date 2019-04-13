@@ -24,6 +24,12 @@ def detect (args):
   gf = findfaces.FacesTools()
   gf.detect(*args)
 
+#args: templatePath, dataPath=None, outputPath=None
+def cropAllFaces (args):
+  #print("executing genfiles " + str(args))
+  gf = findfaces.FacesTools()
+  gf.cropAllFaces(*args)
+
 #args: type
 def help (args):
   #print("executing help " + str(args))
@@ -38,10 +44,13 @@ def _show_help (type=None):
     print("$ ff_detect img1.jpg")
   else:
     print("options: detect.")
+    print("options: cropAllFaces.")
     print("- detect: Find faces.")
+    print("- cropAllFaces: Crop all faces.")
     print("")
     print("Examples of 'find faces':")
     print("$ ff_detect img1.jpg")
+    print("$ ff_cropAllFaces img1.jpg")
 
 if __name__ == '__main__':
     main()
